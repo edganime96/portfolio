@@ -8,7 +8,9 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
 }
 
-h1 {
+.hero h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
     font-size: 40px;
     line-height: 1.5;
     letter-spacing: -.2px;
@@ -20,13 +22,15 @@ h1 {
 h1 strong {
     /* color: #026fff; */
     color: #FF1A00;
+    font-weight: lighter;
 }
 
 h2 {
     /* color: #026fff; */
     color: black;
     text-transform: uppercase;
-    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family: 'Source Sans Pro', sans-serif; */
+    font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     font-size: 24px;
     margin-bottom: 40px;
@@ -63,7 +67,7 @@ h2 span {
 }
 
 .project {
-    border: 1px solid gray;
+    border: 1px solid whitesmoke;
     border-radius: 10px;
     /* margin: 10px; */
     margin-bottom: 15px;
@@ -73,6 +77,10 @@ h2 span {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+.project-course {
+    color: #FF1A00;
 }
 
 .project-course, .project-date, .project-url {
@@ -137,6 +145,8 @@ figure {
 }
 
 .header .logo {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
     display: flex;
     color: black;
     font-size: 30px;
@@ -156,6 +166,7 @@ figure {
 }
 
 .menu {
+    font-family: 'Open Sans', sans-serif;
     height: inherit;
 }
 
