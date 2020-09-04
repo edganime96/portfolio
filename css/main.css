@@ -128,10 +128,12 @@ h2 span {
     width: 100%;
     position: fixed;
     top: 0;
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(80px);
+    -webkit-backdrop-filter: blur(80px);
     display: flex;
     align-items: center;
     justify-content: space-around;
+    /* display: none; */
 }
 
 ol, ul {
@@ -350,6 +352,18 @@ h2.event-list-title {
     flex-wrap: inherit;
 }
 
+.burger-button {
+    font-size: 25px;
+    color: black;
+    text-align: center;
+    position: absolute;
+    left: -5px;
+}
+
+.fa-bars:before {
+    display: none;
+}
+
 @media screen and (max-width: 1024px) {
     .container {
         padding: 0 auto;
@@ -372,9 +386,12 @@ h2.event-list-title {
         width: 100%;
     }
     
-    h1 {
+    .hero h1 {
         font-size: 2em;
         z-index: 2;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 5px;
     }
 
     .form-email {
@@ -426,6 +443,32 @@ h2.event-list-title {
     
     .header a {
         justify-content: center;
+        height: 40px;
+        /* font-size: 1.2em; */
+        /* text-decoration: underline; */
+        margin-bottom: 5px;
+    }
+
+    .menu {
+        margin: 0;
+        position: fixed;
+        background-color: rgba(255, 255, 255, 0.9);
+        width: 100vw;
+        top: -100vh;
+        padding: 10px;
+        border: none;
+        border-bottom: 1px solid #FF1A00;
+        /* z-index: 3; */
+        /* display: none; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 1s;
+    }
+    
+    .menu.is-active {
+        /* right: -10px; */
+        top: 81px;
     }
 
     .header .logo {
@@ -485,6 +528,10 @@ h2.event-list-title {
     .hero {
         margin-top: 160px;
     }
+
+    .fa-bars:before {
+        display: inline;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -522,6 +569,12 @@ h2.event-list-title {
     }
 }
 
+@media only screen and (max-width: 396px) {
+    .hero-image {
+        height: auto;
+    }
+}
+
 @media screen and (max-width: 320px) {
     h1 {
         font-size: 1.2em;
@@ -529,8 +582,5 @@ h2.event-list-title {
 
     .hero {
         padding: 2em 1em;
-    }
-    .hero-image {
-        height: auto;
     }
 }
