@@ -144,7 +144,7 @@ h2 span {
     top: 0;
     background-color: rgba(255, 255, 255, 0.7); 
     backdrop-filter: blur(30px);
-    -webkit-backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(30px);
     display: flex;
     align-items: center;
     justify-content: space-around;
