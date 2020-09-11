@@ -76,7 +76,8 @@ h2 span {
 }
 
 .project {
-    border: 1px solid whitesmoke;
+    /* border: 1px solid whitesmoke; */
+    box-shadow: 0 3px 6px 0 lightgrey;
     border-radius: 10px;
     /* margin: 10px; */
     margin-bottom: 15px;
@@ -106,7 +107,7 @@ h2 span {
 }
 
 .project strong {
-    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .project-title {
@@ -255,7 +256,8 @@ h2.event-list-title {
     border-radius: 10px;
     overflow: hidden; /*oculta elementos que se desborden del container*/
     flex-shrink: 0; /*la imagen ocupa el tamaño original designado y no permite hacer resize*/
-    background: #f4fbff;
+    /* background: #f4fbff; */
+    box-shadow: 0 3px 6px 0 lightgrey;
 }
 
 .event img {
@@ -537,6 +539,7 @@ h2.event-list-title {
     .event {
         width: auto;
         flex-shrink: initial;
+        margin: 15px 10px;
     }
 
     .event img {
@@ -551,11 +554,21 @@ h2.event-list-title {
 }
 
 @media screen and (max-width: 480px) {
-    h1 {
-        font-size: 1.5em;
+    .hero h1 {
+        font-size: 1.7em;
+        padding: 0 0 20px 10px;
     }
+
+    .portfolio {
+        padding: 20px 10px;
+    }
+
     .project-details {
         font-size: 12px;
+    }
+
+    h2.event-list-title {
+        margin-left: 10px;
     }
     
     .event-detail {
@@ -583,20 +596,12 @@ h2.event-list-title {
         text-align: center;
         border: 1px solid transparent;
     }
-
-    .hero h1 {
-        padding: 0 0 20px 20px;
-    }
 }
 
 @media only screen and (max-width: 396px) {
     /* .hero-image {
         height: auto;   
     } */
-
-    .hero h1 {
-        font-size: 1.4em;
-    }
 
     h2, h2.event-list-title {
         font-size: 1.2em;
@@ -605,8 +610,8 @@ h2.event-list-title {
 }
 
 @media screen and (max-width: 320px) {
-    h1 {
-        font-size: 1.2em;
+    .hero h1 {
+        font-size: 1.5em;
     }
 
     /* .hero {
