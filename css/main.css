@@ -590,6 +590,10 @@ h2.event-list-title {
     h2.event-list-title {
         margin-left: 10px;
     }
+
+    h2, h2.event-list-title {
+        font-size: 1em;
+    }
     
     .event-detail {
         margin: -2em .5em .5em;
@@ -618,14 +622,10 @@ h2.event-list-title {
     }
 }
 
-@media only screen and (max-width: 396px) {
+@media only screen and (max-width: 375px) {
     /* .hero-image {
         height: auto;   
     } */
-
-    h2, h2.event-list-title {
-        font-size: 1.2em;
-    }
 
 }
 
