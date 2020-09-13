@@ -9,14 +9,16 @@ const burgerButton = document.querySelector('.burger-button');
 //             document.querySelector('.menu').classList.toggle('is-active');
 //         });
 //     }
-//     // else {
-//         //     burgerButton.removeEventListener("click", function() {
-//             //         document.querySelector('.menu').classList.toggle('is-active');
-//             //     });
-//             // }
+//     else {
+//             burgerButton.removeEventListener("click", function() {
+//                     document.querySelector('.menu').classList.toggle('is-active');
+//                 });
+//             }
 //             console.log(event);
 // }
-        
+
+// validation(ipad);
+    
         
 burgerButton.addEventListener("click", function() {
     document.querySelector('.menu').classList.toggle('is-active');

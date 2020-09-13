@@ -288,6 +288,7 @@ h2.event-list-title {
 
 .event-description {
     text-align: left;
+    margin-bottom: 30px;
 }
 
 .event-url {
@@ -303,7 +304,6 @@ h2.event-list-title {
     color: white;
     background-color: #FF1A00;
     border: none;
-    box-shadow: 0 0 10px 0 #FF1A00;
 }
 
 .contact {
@@ -553,7 +553,7 @@ h2.event-list-title {
     }
 
     .project-description {
-        font-size: .8em;
+        font-size: 1em;
     }
 
     .event {
@@ -583,21 +583,35 @@ h2.event-list-title {
         padding: 20px 10px;
     }
 
-    .project-details {
-        font-size: 12px;
-    }
-
-    h2.event-list-title {
-        margin-left: 10px;
-    }
-
-    h2, h2.event-list-title {
-        font-size: 1em;
+    h2 {
+        margin: 0 0 20px 0;
     }
     
+    h2, h2.event-list-title {
+        font-size: 1em;
+        margin-bottom: 20px;
+    }
+    
+    h2.event-list-title {
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+    
+    .project {
+        padding: 20px 10px;
+    }
+
+    .project-details {
+        font-size: 14px;
+    }
+
     .event-detail {
         margin: -2em .5em .5em;
         padding: 1em;
+    }
+
+    .event-description {
+        font-size: 14px;
     }
 
     .contact {
