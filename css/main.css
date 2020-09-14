@@ -404,7 +404,7 @@ h2.event-list-title {
     display: none;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
     .container {
         padding: 0 auto;
     }
