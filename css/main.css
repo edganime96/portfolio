@@ -182,6 +182,10 @@ figure {
     color: #FF1A00;
 }
 
+/* .header .logo a:hover span {
+    color: black;
+} */
+
 .header a {
     color: black;
     font-weight: bold;
@@ -190,7 +194,7 @@ figure {
     transition: .3s;
 }
 
-.header a:hover {
+.header .menu a:hover {
     color: #FF1A00;
 }
 
@@ -255,6 +259,7 @@ figure {
 .event-list {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
 h2.event-list-title {
@@ -391,6 +396,10 @@ h2.event-list-title {
     flex-wrap: inherit;
 }
 
+.event-list.container {
+    margin-bottom: 30px;
+}
+
 .burger-button {
     padding-right: 10px;
     font-size: 25px;
@@ -402,6 +411,44 @@ h2.event-list-title {
 
 .fa-bars:before {
     display: none;
+}
+
+.skills {
+    background-color: whitesmoke;
+    /* background-image: url('https://www.wallpaperwarehouse.com/upload_media/product/preview/1550777671HIESPKLU_1550784050.jpg'); */
+    /* background-position: center; */
+    /* background-attachment: fixed; */
+    /* background-repeat: repeat; */
+    padding: 20px 20px 40px;
+    /* margin: 20px 0; */
+    text-align: center;
+}
+
+h2.skills-title {
+    color: black;
+    margin: 20px 0;
+}
+
+.skills-icons {
+    font-size: 40px;
+    color: lightgray;
+}
+
+.skills-icons i {
+    margin: 0 10px;
+}
+
+.skills-ux {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.skills-ux p {
+    font-size: 12px;
+    color: gray;
+    margin: 5px 10px;
 }
 
 @media screen and (max-width: 1023px) {
@@ -612,6 +659,10 @@ h2.event-list-title {
 
     .event-description {
         font-size: 14px;
+    }
+
+    .skills-icons {
+        font-size: 2em;
     }
 
     .contact {

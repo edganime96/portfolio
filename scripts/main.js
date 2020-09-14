@@ -4,6 +4,7 @@ const ipad = window.matchMedia('screen and (max-width: 767px)');
 const widthViewport = document.documentElement.clientWidth;
 
 ipad.addListener(validation)
+validation(ipad);
 
 function validation(event) {
     if (event.matches) {
@@ -20,8 +21,6 @@ if(widthViewport <= 767) {
     menu.addEventListener('click', hideShow);
     //se le agrega el escuchar de eventos para que al hacer click sobre algun link del menu se elimina la clase is-active automaticamente
 }
-
-validation(ipad);
 
 function hideShow() {
     menu.classList.toggle('is-active');
