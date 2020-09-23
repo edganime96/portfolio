@@ -196,6 +196,9 @@ figure {
 
 .header .menu a:hover {
     color: #FF1A00;
+    border-bottom: 1px solid #FF1A00;
+    /* padding-bottom: 12px; */
+    padding: 0 15px;
 }
 
 .menu {
