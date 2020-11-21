@@ -23,12 +23,12 @@ h1, h2, h3, h4, h5, h6 {
     /* text-decoration: line-through; tachado */
 }
 
-/* h1 strong {
+h1 strong:first-child {
     color: #FF1A00;
     font-weight: lighter;
-} */
+}
 
-h1 strong:nth-child(2) {
+h1 strong:nth-child(3) {
     color: #23BE59;
     font-weight: normal;
 }
