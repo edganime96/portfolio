@@ -1,5 +1,6 @@
 const burgerButton = document.querySelector('.burger-button');
 const menu = document.querySelector('.menu');
+// const body = document.querySelector('body');
 const ipad = window.matchMedia('screen and (max-width: 767px)');
 const widthViewport = document.documentElement.clientWidth;
 
@@ -24,8 +25,15 @@ if(widthViewport <= 767) {
 
 function hideShow() {
     menu.classList.toggle('is-active');
+    // if (true) {
+    //     body.addEventListener('click', () => {
+    //         menu.classList.remove('is-active');
+    //     })
+    // }
 }
+
+// body.removeEventListener('click', hideShow);
         
 // burgerButton.addEventListener("click", function() {
-//     document.querySelector('.menu').classList.toggle('is-active');
+    // document.querySelector('.menu').classList.toggle('is-active');
 // });
