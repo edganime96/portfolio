@@ -211,13 +211,16 @@ figure {
     font-weight: bold;
     text-decoration: none;
     list-style: none;
-    transition: .3s;
+    transition: .1s;
     letter-spacing: 2px;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 0px;
 }
 
 .header .menu a:hover {
     color: #FF1A00;
     border-bottom: 2px solid #FF1A00;
+    padding-bottom: 2px;
 }
 
 .menu {
